@@ -47,11 +47,19 @@
   --spring: cubic-bezier(.34,1.56,.64,1);
 }
 
+
+
+
+
+
+
+
+
 /* ══════════════════════════════════════════════
    RESET
 ══════════════════════════════════════════════ */
 *,*::before,*::after { box-sizing:border-box; margin:0; padding:0; }
-html { scroll-behavior:smooth; font-size:16px; }
+html { scroll-behavior:smooth; font-size:18px }
 body {
   font-family:'Instrument Sans',system-ui,sans-serif;
   background:var(--ink);
@@ -462,7 +470,7 @@ body::before {
   transition:transform .4s var(--spring),box-shadow .4s var(--ease);
 }
 .pillar-card:hover { transform:translateY(-8px); box-shadow:0 32px 80px rgba(0,0,0,.4); }
-.pillar-top { height:200px; position:relative; overflow:hidden; }
+.pillar-top { height:220px; position:relative; overflow:hidden; }
 .pillar-img { width:100%; height:100%; object-fit:cover; transition:transform .6s var(--ease); }
 .pillar-card:hover .pillar-img { transform:scale(1.06); }
 .pillar-overlay { position:absolute; inset:0; display:flex; align-items:flex-end; padding:1.5rem; }
@@ -538,7 +546,7 @@ body::before {
 .commitments-sticky { position:sticky; top:100px; }
 .commitments-sticky .sec-sub { color:rgba(255,255,255,.55); }
 .commit-visual { margin-top:2.5rem; border-radius:var(--r-lg); overflow:hidden; border:1px solid rgba(255,255,255,.07); }
-.commit-vis-img { width:100%; height:280px; object-fit:cover; display:block; }
+.commit-vis-img { width:100%; height:290px; object-fit:cover; display:block; }
 .journey {
   display:flex; flex-direction:column;
   padding-left:1px; border-left:1px solid rgba(255,255,255,.1);
@@ -784,8 +792,8 @@ body::before {
       </div>
     </div>
     <div class="hero-right">
-      <img src="ESG12.png" alt="ESG digital globe" class="hero-img-main">
-      <img src="ESG3.png" alt="ESG analytics team" class="hero-img-card">
+      <img src="ESG11.png" alt="ESG digital globe" class="hero-img-main">
+      <img src="ESG17.png" alt="ESG analytics team" class="hero-img-card">
       <div class="hero-stat-card">
         <span class="hsc-num">10+</span>
         <span class="hsc-label" data-i18n="stat_badge_label">ESG Policies<br>Implemented</span>
@@ -827,7 +835,7 @@ body::before {
       <p data-i18n="about_p3">KBTU implements specific, measurable initiatives that demonstrate extensive competencies and genuine leadership in the field of sustainable development not just in Kazakhstan, but across Central Asia and the CIS region.</p>
     </div>
     <div class="about-img-col reveal rd2">
-      <img src="ESG13.png" alt="Business professionals discussing ESG strategy" class="about-img">
+      <img src="ESG16.png" alt="Business professionals discussing ESG strategy" class="about-img">
       <div class="about-accent">
         <div class="about-accent-n">2026</div>
         <div class="about-accent-t" data-i18n="about_accent">Active ESG<br>implementation year</div>
@@ -858,7 +866,7 @@ body::before {
       </div>
       <div class="pillar-card pillar-soc reveal rd2">
         <div class="pillar-top">
-          <img src="ESG3.png" alt="Social" class="pillar-img">
+          <img src="ESG21.png" alt="Social" class="pillar-img">
           <div class="pillar-overlay"><div class="pillar-icon-wrap">🤝</div></div>
         </div>
         <div class="pillar-body">
@@ -869,7 +877,7 @@ body::before {
       </div>
       <div class="pillar-card pillar-gov reveal rd3">
         <div class="pillar-top">
-          <img src="ESG12.png" alt="Governance" class="pillar-img">
+          <img src="ESG16.png" alt="Governance" class="pillar-img">
           <div class="pillar-overlay"><div class="pillar-icon-wrap">⚖️</div></div>
         </div>
         <div class="pillar-body">
@@ -904,7 +912,7 @@ body::before {
       <h2 class="sec-h" data-i18n="commit_h">Evidence of<br><em>Real Action</em></h2>
       <p class="sec-sub" data-i18n="commit_sub">Beyond policy, KBTU demonstrates its commitment through eight concrete, ongoing strategic initiatives that transform the university and the region.</p>
       <div class="commit-visual">
-        <img src="ESG10.png" alt="ESG digital strategy" class="commit-vis-img">
+        <img src="ESG3.png" alt="ESG digital strategy" class="commit-vis-img">
       </div>
     </div>
     <div class="journey reveal rd2" id="journeyList"></div>
@@ -929,7 +937,7 @@ body::before {
     </div>
     <div class="cta-card reveal rd2">
       <div class="commit-visual">
-        <img src="ESG12.png" alt="ESG digital strategy" class="commit-vis-img">
+        <img src="ESG17.png" alt="ESG digital strategy" class="commit-vis-img">
       </div>
     </div>
   </div>
@@ -1249,6 +1257,17 @@ const POLICIES = {
     { name:'Sustainable Procurement Policy', detail:'Ensures the selection of suppliers and contractors based on rigorous environmental and social responsibility criteria.' },
     { name:'Sustainable Investment Policy', detail:'Aimed at integrating ESG factors into investment decision-making processes for university assets and partnerships.' },
     { name:'Diversity, Equity & Inclusion (DEI) Policy', detail:'Guarantees equal opportunities and respect for individual differences across the entire academic and administrative environment.' },
+    { name:'', detail:'' },
+    { name:'', detail:'' },
+    { name:'', detail:'' },
+    { name:'', detail:'' }, 
+    { name:'', detail:'' },
+    { name:'', detail:'' },
+    { name:'', detail:'' },
+    { name:'', detail:'' },
+    { name:'', detail:'' },
+    { name:'', detail:'' },
+
   ],
   ru: [
     { name:'Кодекс корпоративного управления', detail:'Устанавливает рамки прозрачного, подотчётного и этичного управления на всех уровнях университетского менеджмента и принятия решений.' },
@@ -1261,6 +1280,16 @@ const POLICIES = {
     { name:'Политика устойчивых закупок', detail:'Обеспечивает отбор поставщиков и подрядчиков на основе строгих критериев экологической и социальной ответственности.' },
     { name:'Политика устойчивых инвестиций', detail:'Направлена на интеграцию факторов ESG в процессы принятия инвестиционных решений для активов и партнёрств университета.' },
     { name:'Политика разнообразия, равенства и инклюзивности (DEI)', detail:'Гарантирует равные возможности и уважение к индивидуальным различиям во всей академической и административной среде.' },
+    { name:'', detail:'' },
+    { name:'', detail:'' },
+    { name:'', detail:'' },
+    { name:'', detail:'' }, 
+    { name:'', detail:'' },
+    { name:'', detail:'' },
+    { name:'', detail:'' },
+    { name:'', detail:'' },
+    { name:'', detail:'' },
+    { name:'', detail:'' },
   ],
   kz: [
     { name:'Корпоративтік басқару кодексі', detail:'Университеттік басқарудың барлық деңгейлерінде мөлдір, есепті және этикалық басқарудың шеңберін белгілейді.' },
@@ -1273,6 +1302,16 @@ const POLICIES = {
     { name:'Тұрақты сатып алу саясаты', detail:'Жеткізушілер мен мердігерлерді қатаң экологиялық және әлеуметтік жауапкершілік критерийлері негізінде іріктеуді қамтамасыз етеді.' },
     { name:'Тұрақты инвестициялық саясат', detail:'Университет активтері мен серіктестіктері үшін инвестициялық шешімдер қабылдау процестеріне ESG факторларын интеграциялауға бағытталған.' },
     { name:'Алуандылық, тең құқықтылық және инклюзивтілік (DEI) саясаты', detail:'Бүкіл академиялық және әкімшілік ортада тең мүмкіндіктерді және жеке айырмашылықтарды сыйлауды кепілдендіреді.' },
+    { name:'', detail:'' },
+    { name:'', detail:'' },
+    { name:'', detail:'' },
+    { name:'', detail:'' }, 
+    { name:'', detail:'' },
+    { name:'', detail:'' },
+    { name:'', detail:'' },
+    { name:'', detail:'' },
+    { name:'', detail:'' },
+    { name:'', detail:'' },
   ]
 };
 
